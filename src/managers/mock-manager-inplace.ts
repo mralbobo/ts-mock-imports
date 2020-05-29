@@ -3,9 +3,6 @@ import { IConstruct, IModule, StringKeyOf } from '../types';
 import { Manager } from './manager';
 const sinon = sinonModule as sinonModule.SinonStatic;
 
-export interface IMockOptions {
-  returns?: any;
-}
 
 export class MockManagerInPlace<T> extends Manager {
   protected original!: IConstruct<T>;
